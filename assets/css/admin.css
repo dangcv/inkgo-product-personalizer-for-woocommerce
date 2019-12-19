@@ -1,0 +1,109 @@
+@-webkit-keyframes inkgo_loading {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes inkgo_loading {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/* settings page */
+#inkgo-connect{
+    max-width: 600px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    position: relative;
+}
+#inkgo-connect h1{
+    margin-bottom: 30px;
+    font-size: 34px;
+}
+#inkgo-connect p{
+    margin: 20px 0 30px 0;
+    text-align:center;
+}
+#inkgo-connect .inkgo-connect-button{
+    height: 53px;
+    line-height: 53px;
+    padding: 0 40px;
+    font-size: 18px;
+}
+
+/* product page */
+div#TB_window.inkgo-modal {
+    width: auto!important;
+    left: 40px;
+    margin-left: 0!important;
+    right: 40px;
+}
+.inkgo-modal div#TB_title {
+    float: left;
+    height: auto;
+    width: 100%;
+}
+.inkgo-campaigns .attachment .thumbnail img {
+    max-width: 100%;
+    max-height: 100%;
+}
+#inkgo-campaign-img img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.inkgo-modal-loading:after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.inkgo-modal-loading:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 90px;
+    height: 90px;
+    margin: auto;
+     -webkit-animation: inkgo_loading 2s linear infinite; /* Safari */
+    animation: inkgo_loading 2s linear infinite;
+}
+.inkgo-modal div#TB_ajaxWindowTitle {
+    font-size: 20px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.inkgo-warning {
+    background: #fff;
+    border-left: 4px solid #dc3232;
+    padding: 1px 12px;
+    margin: 10px 0 20px 0;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    text-align: left;
+}
+.inkgo-modal div#TB_ajaxContent {
+    width: calc(100% - 30px)!important;
+}
+.inkgo-modal li.attachment.inkgo-product {
+    max-width: 210px;
+}
+a.inkgo-thumb {
+    float: left;
+    width: 64px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-right: 15px;
+}
+a.inkgo-thumb img {
+    max-width: 100%;
+    border-radius: 3px;
+}
